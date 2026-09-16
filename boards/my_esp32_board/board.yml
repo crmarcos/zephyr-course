@@ -1,0 +1,6 @@
+board:
+  name: my_esp32_board
+  full_name: IOMICO MY ESP32 BOARD
+  vendor: iomico
+  socs:
+    - name: esp32
