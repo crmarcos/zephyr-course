@@ -22,19 +22,12 @@ int main(void)
     struct sensor_value val;
     int ret;
 
+    ret = sensor_channel_get(driver, SENSOR_CHAN_AMBIENT_TEMP, &val);
+    ret = sensor_sample_fetch(driver);
+
+    // Enter infinite loop
     while (1) {
-        ret = sensor_channel_get(driver, SENSOR_CHAN_AMBIENT_TEMP, &val);
         k_msleep(CONFIG_APP_HEARTBEAT_PERIOD_MS);
-
-        ret = sensor_sample_fetch(driver);
-        k_msleep(CONFIG_APP_HEARTBEAT_PERIOD_MS);
-
-        // Gets and Logs the driver's internal counter
-        int32_t c = get_internal_counter(driver);
-        LOG_INF("Internal counter read from main: %d", c);
-
-        // If the driver's internal counter is over 20, sets it to 10
-        if(c > 20) set_internal_counter(driver, 10);
     }
     return 0;
 }

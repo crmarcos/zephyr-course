@@ -1,7 +1,19 @@
-config OUR_DRIVER
-    bool "Our driver"
-    default y
-    depends on DT_HAS_OUR_DRIVER_ENABLED
-    select GPIO
-    help
-        Enable the custom driver for the  GPIO peripheral
+menu "OUR_DRIVER"
+
+    menuconfig OUR_DRIVER
+        bool "Our driver"
+        default y
+        depends on DT_HAS_OUR_DRIVER_ENABLED
+        select GPIO
+        help
+            Enable the custom driver for the  GPIO peripheral
+
+    if OUR_DRIVER
+        config OUR_DRIVER_SHELL
+            bool "Our driver shell"
+            default y
+    endif
+
+endmenu
+
+
