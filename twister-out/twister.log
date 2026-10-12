@@ -1,0 +1,582 @@
+2026-10-11 21:57:29,056 - twister - INFO - Using Ninja..
+2026-10-11 21:57:29,102 - twister - INFO - Zephyr version: v4.2.0
+2026-10-11 21:57:29,104 - twister - DEBUG - Running cmake script /home/marcos/workspace/deps/zephyr/cmake/verify-toolchain.cmake
+2026-10-11 21:57:29,104 - twister - DEBUG - Calling cmake: /usr/bin/cmake -DFORMAT=json -P /home/marcos/workspace/deps/zephyr/cmake/verify-toolchain.cmake
+2026-10-11 21:57:29,257 - twister - DEBUG - Finished running /home/marcos/workspace/deps/zephyr/cmake/verify-toolchain.cmake
+2026-10-11 21:57:29,257 - twister - INFO - Using 'zephyr' toolchain.
+2026-10-11 21:57:30,090 - twister - DEBUG - Reading testsuite configuration files under /home/marcos/workspace/zephyr-course/tests/ring_buf...
+2026-10-11 21:57:30,090 - twister - DEBUG - Found possible testsuite in /home/marcos/workspace/zephyr-course/tests/ring_buf
+2026-10-11 21:57:30,092 - twister - DEBUG - No duplicates found.
+2026-10-11 21:57:30,093 - twister - DEBUG - platform filter: ['native_sim']
+2026-10-11 21:57:30,093 - twister - DEBUG -   vendor filter: []
+2026-10-11 21:57:30,093 - twister - DEBUG -     arch_filter: None
+2026-10-11 21:57:30,093 - twister - DEBUG -      tag_filter: None
+2026-10-11 21:57:30,093 - twister - DEBUG -     exclude_tag: None
+2026-10-11 21:57:30,093 - twister - DEBUG - Checking platform filter: ['native_sim']
+2026-10-11 21:57:30,093 - twister - INFO - Building initial testsuite list...
+2026-10-11 21:57:30,093 - twister - INFO - Writing JSON report /home/marcos/workspace/zephyr-course/twister-out/testplan.json
+2026-10-11 21:57:30,106 - twister - INFO - JOBS: 12
+2026-10-11 21:57:30,106 - twister - INFO - Adding tasks to the queue...
+2026-10-11 21:57:30,106 - twister - DEBUG - adding native_sim/native/host/homework.unit.ring_buf
+2026-10-11 21:57:30,107 - twister - INFO - Added initial list of jobs to queue
+2026-10-11 21:57:30,114 - twister - DEBUG - Running cmake on /home/marcos/workspace/zephyr-course/tests/ring_buf for native_sim/native
+2026-10-11 21:57:30,115 - twister - DEBUG - Calling cmake: /usr/bin/cmake -B/home/marcos/workspace/zephyr-course/twister-out/native_sim_native/host/homework.unit.ring_buf -DTC_RUNID=961feb87cf0620f90f15e12272c13d87 -DTC_NAME=homework.unit.ring_buf -DCONFIG_COMPILER_WARNINGS_AS_ERRORS=y -DEXTRA_GEN_EDT_ARGS=--edtlib-Werror -GNinja -DPython3_EXECUTABLE=/home/marcos/iomico/.zephyr/bin/python3 -DZEPHYR_TOOLCHAIN_VARIANT=host -S/home/marcos/workspace/zephyr-course/tests/ring_buf -DBOARD=native_sim/native
+2026-10-11 21:57:30,127 - twister - DEBUG - Launched 12 jobs
+2026-10-11 21:57:33,210 - twister - DEBUG - Finished running cmake /home/marcos/workspace/zephyr-course/tests/ring_buf for native_sim/native in 3.09 seconds
+2026-10-11 21:57:33,212 - twister - DEBUG - build test: native_sim/native/host/homework.unit.ring_buf
+2026-10-11 21:57:33,213 - twister - DEBUG - Building /home/marcos/workspace/zephyr-course/tests/ring_buf for native_sim/native
+2026-10-11 21:57:33,213 - twister - DEBUG - Running /usr/bin/cmake --build /home/marcos/workspace/zephyr-course/twister-out/native_sim_native/host/homework.unit.ring_buf
+2026-10-11 21:57:35,233 - twister - DEBUG - Finished building /home/marcos/workspace/zephyr-course/tests/ring_buf for native_sim/native in 2.02 seconds
+2026-10-11 21:57:35,233 - twister - DEBUG - Determine test cases for test instance: native_sim/native/host/homework.unit.ring_buf
+2026-10-11 21:57:35,233 - twister - DEBUG - Determine test cases for test suite: homework.unit.ring_buf
+2026-10-11 21:57:35,275 - twister - DEBUG - Test instance native_sim/native/host/homework.unit.ring_buf already has 8 testcase(s) known: [<TestCase homework.unit.ring_buf.ring_buf_push_pop.single_push_pop with None>, <TestCase homework.unit.ring_buf.ring_buf_boundaries.pop_null_returns_einval with None>, <TestCase homework.unit.ring_buf.ring_buf_push_pop.push_full_returns_enospc with None>, <TestCase homework.unit.ring_buf.ring_buf_boundaries.peek_does_not_consume with None>, <TestCase homework.unit.ring_buf.ring_buf_init.reinit_clears_state with None>, <TestCase homework.unit.ring_buf.ring_buf_boundaries.is_full_after_fill with None>, <TestCase homework.unit.ring_buf.ring_buf_init.fresh_state with None>, <TestCase homework.unit.ring_buf.ring_buf_push_pop.fifo_order with None>]
+2026-10-11 21:57:35,275 - twister - DEBUG - Detected 8 Ztest case(s): [homework.unit.ring_buf.ring_buf_boundaries.is_full_after_fill, homework.unit.ring_buf.ring_buf_boundaries.pop_null_returns_einval, homework.unit.ring_buf.ring_buf_boundaries.peek_does_not_consume, homework.unit.ring_buf.ring_buf_push_pop.push_full_returns_enospc, homework.unit.ring_buf.ring_buf_push_pop.fifo_order, homework.unit.ring_buf.ring_buf_push_pop.single_push_pop, homework.unit.ring_buf.ring_buf_init.reinit_clears_state, homework.unit.ring_buf.ring_buf_init.fresh_state] in /home/marcos/workspace/zephyr-course/twister-out/native_sim_native/host/homework.unit.ring_buf/zephyr/zephyr.elf
+2026-10-11 21:57:35,278 - twister - DEBUG - run test: native_sim/native/host/homework.unit.ring_buf
+2026-10-11 21:57:35,278 - twister - DEBUG - Reset instance status from 'passed' to None before run.
+2026-10-11 21:57:35,279 - twister - DEBUG - Spawning process: /home/marcos/workspace/zephyr-course/twister-out/native_sim_native/host/homework.unit.ring_buf/zephyr/zephyr.exe
+in directory: /home/marcos/workspace/zephyr-course/twister-out/native_sim_native/host/homework.unit.ring_buf
+2026-10-11 21:57:35,279 - twister - DEBUG - Spawning BinaryHandler Thread for native_sim/native/host/homework.unit.ring_buf
+2026-10-11 21:57:35,280 - twister - DEBUG - OUTPUT: *** Booting Zephyr OS build v4.2.0 ***
+2026-10-11 21:57:35,281 - twister - DEBUG - OUTPUT: Running TESTSUITE ring_buf_boundaries
+2026-10-11 21:57:35,281 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,281 - twister - DEBUG - OUTPUT: START - test_pop_null_returns_einval
+2026-10-11 21:57:35,281 - twister - DEBUG - TC_START: Ztest case 'pop_null_returns_einval' matched to 'homework.unit.ring_buf.ring_buf_boundaries.pop_null_returns_einval
+2026-10-11 21:57:35,281 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;31m<err> ring_buf: value pointer is NULL[0m
+2026-10-11 21:57:35,281 - twister - DEBUG - OUTPUT:  PASS - test_pop_null_returns_einval in 0.000 seconds
+2026-10-11 21:57:35,281 - twister - DEBUG - TC_END: Ztest case 'pop_null_returns_einval' matched to 'homework.unit.ring_buf.ring_buf_boundaries.pop_null_returns_einval
+2026-10-11 21:57:35,282 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_boundaries.pop_null_returns_einval':{'count': 1}
+2026-10-11 21:57:35,282 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,282 - twister - DEBUG - OUTPUT: START - test_is_full_after_fill
+2026-10-11 21:57:35,282 - twister - DEBUG - TC_START: Ztest case 'is_full_after_fill' matched to 'homework.unit.ring_buf.ring_buf_boundaries.is_full_after_fill
+2026-10-11 21:57:35,282 - twister - DEBUG - OUTPUT:  PASS - test_is_full_after_fill in 0.000 seconds
+2026-10-11 21:57:35,282 - twister - DEBUG - TC_END: Ztest case 'is_full_after_fill' matched to 'homework.unit.ring_buf.ring_buf_boundaries.is_full_after_fill
+2026-10-11 21:57:35,282 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_boundaries.is_full_after_fill':{'count': 1}
+2026-10-11 21:57:35,282 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,282 - twister - DEBUG - OUTPUT: START - test_peek_does_not_consume
+2026-10-11 21:57:35,282 - twister - DEBUG - TC_START: Ztest case 'peek_does_not_consume' matched to 'homework.unit.ring_buf.ring_buf_boundaries.peek_does_not_consume
+2026-10-11 21:57:35,282 - twister - DEBUG - OUTPUT:  PASS - test_peek_does_not_consume in 0.000 seconds
+2026-10-11 21:57:35,282 - twister - DEBUG - TC_END: Ztest case 'peek_does_not_consume' matched to 'homework.unit.ring_buf.ring_buf_boundaries.peek_does_not_consume
+2026-10-11 21:57:35,282 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_boundaries.peek_does_not_consume':{'count': 1}
+2026-10-11 21:57:35,282 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,283 - twister - DEBUG - OUTPUT: START - test_peek_does_not_consume
+2026-10-11 21:57:35,283 - twister - DEBUG - TC_START: Ztest case 'peek_does_not_consume' matched to 'homework.unit.ring_buf.ring_buf_boundaries.peek_does_not_consume
+2026-10-11 21:57:35,283 - twister - DEBUG - OUTPUT:  PASS - test_peek_does_not_consume in 0.000 seconds
+2026-10-11 21:57:35,283 - twister - DEBUG - TC_END: Ztest case 'peek_does_not_consume' matched to 'homework.unit.ring_buf.ring_buf_boundaries.peek_does_not_consume
+2026-10-11 21:57:35,283 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_boundaries.peek_does_not_consume':{'count': 1}
+2026-10-11 21:57:35,283 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,283 - twister - DEBUG - OUTPUT: START - test_is_full_after_fill
+2026-10-11 21:57:35,283 - twister - DEBUG - TC_START: Ztest case 'is_full_after_fill' matched to 'homework.unit.ring_buf.ring_buf_boundaries.is_full_after_fill
+2026-10-11 21:57:35,283 - twister - DEBUG - OUTPUT:  PASS - test_is_full_after_fill in 0.000 seconds
+2026-10-11 21:57:35,283 - twister - DEBUG - TC_END: Ztest case 'is_full_after_fill' matched to 'homework.unit.ring_buf.ring_buf_boundaries.is_full_after_fill
+2026-10-11 21:57:35,283 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_boundaries.is_full_after_fill':{'count': 1}
+2026-10-11 21:57:35,283 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,283 - twister - DEBUG - OUTPUT: START - test_pop_null_returns_einval
+2026-10-11 21:57:35,283 - twister - DEBUG - TC_START: Ztest case 'pop_null_returns_einval' matched to 'homework.unit.ring_buf.ring_buf_boundaries.pop_null_returns_einval
+2026-10-11 21:57:35,283 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;31m<err> ring_buf: value pointer is NULL[0m
+2026-10-11 21:57:35,284 - twister - DEBUG - OUTPUT:  PASS - test_pop_null_returns_einval in 0.000 seconds
+2026-10-11 21:57:35,284 - twister - DEBUG - TC_END: Ztest case 'pop_null_returns_einval' matched to 'homework.unit.ring_buf.ring_buf_boundaries.pop_null_returns_einval
+2026-10-11 21:57:35,284 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_boundaries.pop_null_returns_einval':{'count': 1}
+2026-10-11 21:57:35,284 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,284 - twister - DEBUG - OUTPUT: START - test_peek_does_not_consume
+2026-10-11 21:57:35,284 - twister - DEBUG - TC_START: Ztest case 'peek_does_not_consume' matched to 'homework.unit.ring_buf.ring_buf_boundaries.peek_does_not_consume
+2026-10-11 21:57:35,284 - twister - DEBUG - OUTPUT:  PASS - test_peek_does_not_consume in 0.000 seconds
+2026-10-11 21:57:35,284 - twister - DEBUG - TC_END: Ztest case 'peek_does_not_consume' matched to 'homework.unit.ring_buf.ring_buf_boundaries.peek_does_not_consume
+2026-10-11 21:57:35,284 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_boundaries.peek_does_not_consume':{'count': 1}
+2026-10-11 21:57:35,284 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,284 - twister - DEBUG - OUTPUT: START - test_pop_null_returns_einval
+2026-10-11 21:57:35,284 - twister - DEBUG - TC_START: Ztest case 'pop_null_returns_einval' matched to 'homework.unit.ring_buf.ring_buf_boundaries.pop_null_returns_einval
+2026-10-11 21:57:35,284 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;31m<err> ring_buf: value pointer is NULL[0m
+2026-10-11 21:57:35,284 - twister - DEBUG - OUTPUT:  PASS - test_pop_null_returns_einval in 0.000 seconds
+2026-10-11 21:57:35,284 - twister - DEBUG - TC_END: Ztest case 'pop_null_returns_einval' matched to 'homework.unit.ring_buf.ring_buf_boundaries.pop_null_returns_einval
+2026-10-11 21:57:35,284 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_boundaries.pop_null_returns_einval':{'count': 1}
+2026-10-11 21:57:35,285 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,285 - twister - DEBUG - OUTPUT: START - test_is_full_after_fill
+2026-10-11 21:57:35,285 - twister - DEBUG - TC_START: Ztest case 'is_full_after_fill' matched to 'homework.unit.ring_buf.ring_buf_boundaries.is_full_after_fill
+2026-10-11 21:57:35,285 - twister - DEBUG - OUTPUT:  PASS - test_is_full_after_fill in 0.000 seconds
+2026-10-11 21:57:35,285 - twister - DEBUG - TC_END: Ztest case 'is_full_after_fill' matched to 'homework.unit.ring_buf.ring_buf_boundaries.is_full_after_fill
+2026-10-11 21:57:35,285 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_boundaries.is_full_after_fill':{'count': 1}
+2026-10-11 21:57:35,285 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,285 - twister - DEBUG - OUTPUT: TESTSUITE ring_buf_boundaries succeeded
+2026-10-11 21:57:35,285 - twister - DEBUG - TS_END: END suite 'ring_buf_boundaries':{'count': 1, 'repeat': 0}
+2026-10-11 21:57:35,285 - twister - DEBUG - OUTPUT: Running TESTSUITE ring_buf_boundaries
+2026-10-11 21:57:35,285 - twister - DEBUG - TS_START: START suite 'ring_buf_boundaries'
+2026-10-11 21:57:35,285 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,285 - twister - DEBUG - OUTPUT: START - test_peek_does_not_consume
+2026-10-11 21:57:35,285 - twister - DEBUG - TC_START: Ztest case 'peek_does_not_consume' matched to 'homework.unit.ring_buf.ring_buf_boundaries.peek_does_not_consume
+2026-10-11 21:57:35,285 - twister - DEBUG - OUTPUT:  PASS - test_peek_does_not_consume in 0.000 seconds
+2026-10-11 21:57:35,285 - twister - DEBUG - TC_END: Ztest case 'peek_does_not_consume' matched to 'homework.unit.ring_buf.ring_buf_boundaries.peek_does_not_consume
+2026-10-11 21:57:35,285 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_boundaries.peek_does_not_consume':{'count': 1}
+2026-10-11 21:57:35,285 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,285 - twister - DEBUG - OUTPUT: START - test_is_full_after_fill
+2026-10-11 21:57:35,285 - twister - DEBUG - TC_START: Ztest case 'is_full_after_fill' matched to 'homework.unit.ring_buf.ring_buf_boundaries.is_full_after_fill
+2026-10-11 21:57:35,286 - twister - DEBUG - OUTPUT:  PASS - test_is_full_after_fill in 0.000 seconds
+2026-10-11 21:57:35,286 - twister - DEBUG - TC_END: Ztest case 'is_full_after_fill' matched to 'homework.unit.ring_buf.ring_buf_boundaries.is_full_after_fill
+2026-10-11 21:57:35,286 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_boundaries.is_full_after_fill':{'count': 1}
+2026-10-11 21:57:35,286 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,286 - twister - DEBUG - OUTPUT: START - test_pop_null_returns_einval
+2026-10-11 21:57:35,286 - twister - DEBUG - TC_START: Ztest case 'pop_null_returns_einval' matched to 'homework.unit.ring_buf.ring_buf_boundaries.pop_null_returns_einval
+2026-10-11 21:57:35,286 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;31m<err> ring_buf: value pointer is NULL[0m
+2026-10-11 21:57:35,286 - twister - DEBUG - OUTPUT:  PASS - test_pop_null_returns_einval in 0.000 seconds
+2026-10-11 21:57:35,286 - twister - DEBUG - TC_END: Ztest case 'pop_null_returns_einval' matched to 'homework.unit.ring_buf.ring_buf_boundaries.pop_null_returns_einval
+2026-10-11 21:57:35,286 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_boundaries.pop_null_returns_einval':{'count': 1}
+2026-10-11 21:57:35,286 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,286 - twister - DEBUG - OUTPUT: START - test_peek_does_not_consume
+2026-10-11 21:57:35,286 - twister - DEBUG - TC_START: Ztest case 'peek_does_not_consume' matched to 'homework.unit.ring_buf.ring_buf_boundaries.peek_does_not_consume
+2026-10-11 21:57:35,286 - twister - DEBUG - OUTPUT:  PASS - test_peek_does_not_consume in 0.000 seconds
+2026-10-11 21:57:35,286 - twister - DEBUG - TC_END: Ztest case 'peek_does_not_consume' matched to 'homework.unit.ring_buf.ring_buf_boundaries.peek_does_not_consume
+2026-10-11 21:57:35,286 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_boundaries.peek_does_not_consume':{'count': 1}
+2026-10-11 21:57:35,286 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,286 - twister - DEBUG - OUTPUT: START - test_is_full_after_fill
+2026-10-11 21:57:35,286 - twister - DEBUG - TC_START: Ztest case 'is_full_after_fill' matched to 'homework.unit.ring_buf.ring_buf_boundaries.is_full_after_fill
+2026-10-11 21:57:35,287 - twister - DEBUG - OUTPUT:  PASS - test_is_full_after_fill in 0.000 seconds
+2026-10-11 21:57:35,287 - twister - DEBUG - TC_END: Ztest case 'is_full_after_fill' matched to 'homework.unit.ring_buf.ring_buf_boundaries.is_full_after_fill
+2026-10-11 21:57:35,287 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_boundaries.is_full_after_fill':{'count': 1}
+2026-10-11 21:57:35,287 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,287 - twister - DEBUG - OUTPUT: START - test_pop_null_returns_einval
+2026-10-11 21:57:35,287 - twister - DEBUG - TC_START: Ztest case 'pop_null_returns_einval' matched to 'homework.unit.ring_buf.ring_buf_boundaries.pop_null_returns_einval
+2026-10-11 21:57:35,287 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;31m<err> ring_buf: value pointer is NULL[0m
+2026-10-11 21:57:35,287 - twister - DEBUG - OUTPUT:  PASS - test_pop_null_returns_einval in 0.000 seconds
+2026-10-11 21:57:35,287 - twister - DEBUG - TC_END: Ztest case 'pop_null_returns_einval' matched to 'homework.unit.ring_buf.ring_buf_boundaries.pop_null_returns_einval
+2026-10-11 21:57:35,287 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_boundaries.pop_null_returns_einval':{'count': 1}
+2026-10-11 21:57:35,287 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,287 - twister - DEBUG - OUTPUT: START - test_is_full_after_fill
+2026-10-11 21:57:35,287 - twister - DEBUG - TC_START: Ztest case 'is_full_after_fill' matched to 'homework.unit.ring_buf.ring_buf_boundaries.is_full_after_fill
+2026-10-11 21:57:35,287 - twister - DEBUG - OUTPUT:  PASS - test_is_full_after_fill in 0.000 seconds
+2026-10-11 21:57:35,287 - twister - DEBUG - TC_END: Ztest case 'is_full_after_fill' matched to 'homework.unit.ring_buf.ring_buf_boundaries.is_full_after_fill
+2026-10-11 21:57:35,287 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_boundaries.is_full_after_fill':{'count': 1}
+2026-10-11 21:57:35,287 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,287 - twister - DEBUG - OUTPUT: START - test_peek_does_not_consume
+2026-10-11 21:57:35,287 - twister - DEBUG - TC_START: Ztest case 'peek_does_not_consume' matched to 'homework.unit.ring_buf.ring_buf_boundaries.peek_does_not_consume
+2026-10-11 21:57:35,288 - twister - DEBUG - OUTPUT:  PASS - test_peek_does_not_consume in 0.000 seconds
+2026-10-11 21:57:35,288 - twister - DEBUG - TC_END: Ztest case 'peek_does_not_consume' matched to 'homework.unit.ring_buf.ring_buf_boundaries.peek_does_not_consume
+2026-10-11 21:57:35,288 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_boundaries.peek_does_not_consume':{'count': 1}
+2026-10-11 21:57:35,288 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,288 - twister - DEBUG - OUTPUT: START - test_pop_null_returns_einval
+2026-10-11 21:57:35,288 - twister - DEBUG - TC_START: Ztest case 'pop_null_returns_einval' matched to 'homework.unit.ring_buf.ring_buf_boundaries.pop_null_returns_einval
+2026-10-11 21:57:35,288 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;31m<err> ring_buf: value pointer is NULL[0m
+2026-10-11 21:57:35,288 - twister - DEBUG - OUTPUT:  PASS - test_pop_null_returns_einval in 0.000 seconds
+2026-10-11 21:57:35,288 - twister - DEBUG - TC_END: Ztest case 'pop_null_returns_einval' matched to 'homework.unit.ring_buf.ring_buf_boundaries.pop_null_returns_einval
+2026-10-11 21:57:35,288 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_boundaries.pop_null_returns_einval':{'count': 1}
+2026-10-11 21:57:35,288 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,288 - twister - DEBUG - OUTPUT: TESTSUITE ring_buf_boundaries succeeded
+2026-10-11 21:57:35,288 - twister - DEBUG - TS_END: END suite 'ring_buf_boundaries':{'count': 1, 'repeat': 1}
+2026-10-11 21:57:35,288 - twister - DEBUG - OUTPUT: Running TESTSUITE ring_buf_boundaries
+2026-10-11 21:57:35,288 - twister - DEBUG - TS_START: START suite 'ring_buf_boundaries'
+2026-10-11 21:57:35,288 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,288 - twister - DEBUG - OUTPUT: START - test_is_full_after_fill
+2026-10-11 21:57:35,288 - twister - DEBUG - TC_START: Ztest case 'is_full_after_fill' matched to 'homework.unit.ring_buf.ring_buf_boundaries.is_full_after_fill
+2026-10-11 21:57:35,288 - twister - DEBUG - OUTPUT:  PASS - test_is_full_after_fill in 0.000 seconds
+2026-10-11 21:57:35,289 - twister - DEBUG - TC_END: Ztest case 'is_full_after_fill' matched to 'homework.unit.ring_buf.ring_buf_boundaries.is_full_after_fill
+2026-10-11 21:57:35,289 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_boundaries.is_full_after_fill':{'count': 1}
+2026-10-11 21:57:35,289 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,289 - twister - DEBUG - OUTPUT: START - test_peek_does_not_consume
+2026-10-11 21:57:35,289 - twister - DEBUG - TC_START: Ztest case 'peek_does_not_consume' matched to 'homework.unit.ring_buf.ring_buf_boundaries.peek_does_not_consume
+2026-10-11 21:57:35,289 - twister - DEBUG - OUTPUT:  PASS - test_peek_does_not_consume in 0.000 seconds
+2026-10-11 21:57:35,289 - twister - DEBUG - TC_END: Ztest case 'peek_does_not_consume' matched to 'homework.unit.ring_buf.ring_buf_boundaries.peek_does_not_consume
+2026-10-11 21:57:35,289 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_boundaries.peek_does_not_consume':{'count': 1}
+2026-10-11 21:57:35,289 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,289 - twister - DEBUG - OUTPUT: START - test_pop_null_returns_einval
+2026-10-11 21:57:35,289 - twister - DEBUG - TC_START: Ztest case 'pop_null_returns_einval' matched to 'homework.unit.ring_buf.ring_buf_boundaries.pop_null_returns_einval
+2026-10-11 21:57:35,289 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;31m<err> ring_buf: value pointer is NULL[0m
+2026-10-11 21:57:35,289 - twister - DEBUG - OUTPUT:  PASS - test_pop_null_returns_einval in 0.000 seconds
+2026-10-11 21:57:35,289 - twister - DEBUG - TC_END: Ztest case 'pop_null_returns_einval' matched to 'homework.unit.ring_buf.ring_buf_boundaries.pop_null_returns_einval
+2026-10-11 21:57:35,289 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_boundaries.pop_null_returns_einval':{'count': 1}
+2026-10-11 21:57:35,289 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,289 - twister - DEBUG - OUTPUT: START - test_peek_does_not_consume
+2026-10-11 21:57:35,289 - twister - DEBUG - TC_START: Ztest case 'peek_does_not_consume' matched to 'homework.unit.ring_buf.ring_buf_boundaries.peek_does_not_consume
+2026-10-11 21:57:35,289 - twister - DEBUG - OUTPUT:  PASS - test_peek_does_not_consume in 0.000 seconds
+2026-10-11 21:57:35,289 - twister - DEBUG - TC_END: Ztest case 'peek_does_not_consume' matched to 'homework.unit.ring_buf.ring_buf_boundaries.peek_does_not_consume
+2026-10-11 21:57:35,289 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_boundaries.peek_does_not_consume':{'count': 1}
+2026-10-11 21:57:35,290 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,290 - twister - DEBUG - OUTPUT: START - test_pop_null_returns_einval
+2026-10-11 21:57:35,290 - twister - DEBUG - TC_START: Ztest case 'pop_null_returns_einval' matched to 'homework.unit.ring_buf.ring_buf_boundaries.pop_null_returns_einval
+2026-10-11 21:57:35,290 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;31m<err> ring_buf: value pointer is NULL[0m
+2026-10-11 21:57:35,290 - twister - DEBUG - OUTPUT:  PASS - test_pop_null_returns_einval in 0.000 seconds
+2026-10-11 21:57:35,290 - twister - DEBUG - TC_END: Ztest case 'pop_null_returns_einval' matched to 'homework.unit.ring_buf.ring_buf_boundaries.pop_null_returns_einval
+2026-10-11 21:57:35,290 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_boundaries.pop_null_returns_einval':{'count': 1}
+2026-10-11 21:57:35,290 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,290 - twister - DEBUG - OUTPUT: START - test_is_full_after_fill
+2026-10-11 21:57:35,290 - twister - DEBUG - TC_START: Ztest case 'is_full_after_fill' matched to 'homework.unit.ring_buf.ring_buf_boundaries.is_full_after_fill
+2026-10-11 21:57:35,290 - twister - DEBUG - OUTPUT:  PASS - test_is_full_after_fill in 0.000 seconds
+2026-10-11 21:57:35,290 - twister - DEBUG - TC_END: Ztest case 'is_full_after_fill' matched to 'homework.unit.ring_buf.ring_buf_boundaries.is_full_after_fill
+2026-10-11 21:57:35,290 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_boundaries.is_full_after_fill':{'count': 1}
+2026-10-11 21:57:35,290 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,290 - twister - DEBUG - OUTPUT: START - test_peek_does_not_consume
+2026-10-11 21:57:35,290 - twister - DEBUG - TC_START: Ztest case 'peek_does_not_consume' matched to 'homework.unit.ring_buf.ring_buf_boundaries.peek_does_not_consume
+2026-10-11 21:57:35,290 - twister - DEBUG - OUTPUT:  PASS - test_peek_does_not_consume in 0.000 seconds
+2026-10-11 21:57:35,290 - twister - DEBUG - TC_END: Ztest case 'peek_does_not_consume' matched to 'homework.unit.ring_buf.ring_buf_boundaries.peek_does_not_consume
+2026-10-11 21:57:35,290 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_boundaries.peek_does_not_consume':{'count': 1}
+2026-10-11 21:57:35,291 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,291 - twister - DEBUG - OUTPUT: START - test_pop_null_returns_einval
+2026-10-11 21:57:35,291 - twister - DEBUG - TC_START: Ztest case 'pop_null_returns_einval' matched to 'homework.unit.ring_buf.ring_buf_boundaries.pop_null_returns_einval
+2026-10-11 21:57:35,291 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;31m<err> ring_buf: value pointer is NULL[0m
+2026-10-11 21:57:35,291 - twister - DEBUG - OUTPUT:  PASS - test_pop_null_returns_einval in 0.000 seconds
+2026-10-11 21:57:35,291 - twister - DEBUG - TC_END: Ztest case 'pop_null_returns_einval' matched to 'homework.unit.ring_buf.ring_buf_boundaries.pop_null_returns_einval
+2026-10-11 21:57:35,291 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_boundaries.pop_null_returns_einval':{'count': 1}
+2026-10-11 21:57:35,291 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,291 - twister - DEBUG - OUTPUT: START - test_is_full_after_fill
+2026-10-11 21:57:35,291 - twister - DEBUG - TC_START: Ztest case 'is_full_after_fill' matched to 'homework.unit.ring_buf.ring_buf_boundaries.is_full_after_fill
+2026-10-11 21:57:35,291 - twister - DEBUG - OUTPUT:  PASS - test_is_full_after_fill in 0.000 seconds
+2026-10-11 21:57:35,291 - twister - DEBUG - TC_END: Ztest case 'is_full_after_fill' matched to 'homework.unit.ring_buf.ring_buf_boundaries.is_full_after_fill
+2026-10-11 21:57:35,291 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_boundaries.is_full_after_fill':{'count': 1}
+2026-10-11 21:57:35,291 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,291 - twister - DEBUG - OUTPUT: TESTSUITE ring_buf_boundaries succeeded
+2026-10-11 21:57:35,291 - twister - DEBUG - TS_END: END suite 'ring_buf_boundaries':{'count': 1, 'repeat': 2}
+2026-10-11 21:57:35,291 - twister - DEBUG - OUTPUT: Running TESTSUITE ring_buf_init
+2026-10-11 21:57:35,291 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,292 - twister - DEBUG - OUTPUT: START - test_reinit_clears_state
+2026-10-11 21:57:35,292 - twister - DEBUG - TC_START: Ztest case 'reinit_clears_state' matched to 'homework.unit.ring_buf.ring_buf_init.reinit_clears_state
+2026-10-11 21:57:35,292 - twister - DEBUG - OUTPUT:  PASS - test_reinit_clears_state in 0.000 seconds
+2026-10-11 21:57:35,292 - twister - DEBUG - TC_END: Ztest case 'reinit_clears_state' matched to 'homework.unit.ring_buf.ring_buf_init.reinit_clears_state
+2026-10-11 21:57:35,292 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_init.reinit_clears_state':{'count': 1}
+2026-10-11 21:57:35,292 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,292 - twister - DEBUG - OUTPUT: START - test_fresh_state
+2026-10-11 21:57:35,292 - twister - DEBUG - TC_START: Ztest case 'fresh_state' matched to 'homework.unit.ring_buf.ring_buf_init.fresh_state
+2026-10-11 21:57:35,292 - twister - DEBUG - OUTPUT:  PASS - test_fresh_state in 0.000 seconds
+2026-10-11 21:57:35,292 - twister - DEBUG - TC_END: Ztest case 'fresh_state' matched to 'homework.unit.ring_buf.ring_buf_init.fresh_state
+2026-10-11 21:57:35,292 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_init.fresh_state':{'count': 1}
+2026-10-11 21:57:35,292 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,292 - twister - DEBUG - OUTPUT: START - test_reinit_clears_state
+2026-10-11 21:57:35,292 - twister - DEBUG - TC_START: Ztest case 'reinit_clears_state' matched to 'homework.unit.ring_buf.ring_buf_init.reinit_clears_state
+2026-10-11 21:57:35,292 - twister - DEBUG - OUTPUT:  PASS - test_reinit_clears_state in 0.000 seconds
+2026-10-11 21:57:35,292 - twister - DEBUG - TC_END: Ztest case 'reinit_clears_state' matched to 'homework.unit.ring_buf.ring_buf_init.reinit_clears_state
+2026-10-11 21:57:35,292 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_init.reinit_clears_state':{'count': 1}
+2026-10-11 21:57:35,292 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,292 - twister - DEBUG - OUTPUT: START - test_fresh_state
+2026-10-11 21:57:35,292 - twister - DEBUG - TC_START: Ztest case 'fresh_state' matched to 'homework.unit.ring_buf.ring_buf_init.fresh_state
+2026-10-11 21:57:35,293 - twister - DEBUG - OUTPUT:  PASS - test_fresh_state in 0.000 seconds
+2026-10-11 21:57:35,293 - twister - DEBUG - TC_END: Ztest case 'fresh_state' matched to 'homework.unit.ring_buf.ring_buf_init.fresh_state
+2026-10-11 21:57:35,293 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_init.fresh_state':{'count': 1}
+2026-10-11 21:57:35,293 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,293 - twister - DEBUG - OUTPUT: START - test_reinit_clears_state
+2026-10-11 21:57:35,293 - twister - DEBUG - TC_START: Ztest case 'reinit_clears_state' matched to 'homework.unit.ring_buf.ring_buf_init.reinit_clears_state
+2026-10-11 21:57:35,293 - twister - DEBUG - OUTPUT:  PASS - test_reinit_clears_state in 0.000 seconds
+2026-10-11 21:57:35,293 - twister - DEBUG - TC_END: Ztest case 'reinit_clears_state' matched to 'homework.unit.ring_buf.ring_buf_init.reinit_clears_state
+2026-10-11 21:57:35,293 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_init.reinit_clears_state':{'count': 1}
+2026-10-11 21:57:35,293 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,293 - twister - DEBUG - OUTPUT: START - test_fresh_state
+2026-10-11 21:57:35,293 - twister - DEBUG - TC_START: Ztest case 'fresh_state' matched to 'homework.unit.ring_buf.ring_buf_init.fresh_state
+2026-10-11 21:57:35,293 - twister - DEBUG - OUTPUT:  PASS - test_fresh_state in 0.000 seconds
+2026-10-11 21:57:35,293 - twister - DEBUG - TC_END: Ztest case 'fresh_state' matched to 'homework.unit.ring_buf.ring_buf_init.fresh_state
+2026-10-11 21:57:35,293 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_init.fresh_state':{'count': 1}
+2026-10-11 21:57:35,293 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,293 - twister - DEBUG - OUTPUT: TESTSUITE ring_buf_init succeeded
+2026-10-11 21:57:35,293 - twister - DEBUG - TS_END: END suite 'ring_buf_init':{'count': 1, 'repeat': 0}
+2026-10-11 21:57:35,293 - twister - DEBUG - OUTPUT: Running TESTSUITE ring_buf_init
+2026-10-11 21:57:35,294 - twister - DEBUG - TS_START: START suite 'ring_buf_init'
+2026-10-11 21:57:35,294 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,294 - twister - DEBUG - OUTPUT: START - test_fresh_state
+2026-10-11 21:57:35,294 - twister - DEBUG - TC_START: Ztest case 'fresh_state' matched to 'homework.unit.ring_buf.ring_buf_init.fresh_state
+2026-10-11 21:57:35,294 - twister - DEBUG - OUTPUT:  PASS - test_fresh_state in 0.000 seconds
+2026-10-11 21:57:35,294 - twister - DEBUG - TC_END: Ztest case 'fresh_state' matched to 'homework.unit.ring_buf.ring_buf_init.fresh_state
+2026-10-11 21:57:35,294 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_init.fresh_state':{'count': 1}
+2026-10-11 21:57:35,294 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,294 - twister - DEBUG - OUTPUT: START - test_reinit_clears_state
+2026-10-11 21:57:35,294 - twister - DEBUG - TC_START: Ztest case 'reinit_clears_state' matched to 'homework.unit.ring_buf.ring_buf_init.reinit_clears_state
+2026-10-11 21:57:35,294 - twister - DEBUG - OUTPUT:  PASS - test_reinit_clears_state in 0.000 seconds
+2026-10-11 21:57:35,294 - twister - DEBUG - TC_END: Ztest case 'reinit_clears_state' matched to 'homework.unit.ring_buf.ring_buf_init.reinit_clears_state
+2026-10-11 21:57:35,294 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_init.reinit_clears_state':{'count': 1}
+2026-10-11 21:57:35,294 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,294 - twister - DEBUG - OUTPUT: START - test_fresh_state
+2026-10-11 21:57:35,294 - twister - DEBUG - TC_START: Ztest case 'fresh_state' matched to 'homework.unit.ring_buf.ring_buf_init.fresh_state
+2026-10-11 21:57:35,294 - twister - DEBUG - OUTPUT:  PASS - test_fresh_state in 0.000 seconds
+2026-10-11 21:57:35,294 - twister - DEBUG - TC_END: Ztest case 'fresh_state' matched to 'homework.unit.ring_buf.ring_buf_init.fresh_state
+2026-10-11 21:57:35,294 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_init.fresh_state':{'count': 1}
+2026-10-11 21:57:35,294 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,295 - twister - DEBUG - OUTPUT: START - test_reinit_clears_state
+2026-10-11 21:57:35,295 - twister - DEBUG - TC_START: Ztest case 'reinit_clears_state' matched to 'homework.unit.ring_buf.ring_buf_init.reinit_clears_state
+2026-10-11 21:57:35,295 - twister - DEBUG - OUTPUT:  PASS - test_reinit_clears_state in 0.000 seconds
+2026-10-11 21:57:35,295 - twister - DEBUG - TC_END: Ztest case 'reinit_clears_state' matched to 'homework.unit.ring_buf.ring_buf_init.reinit_clears_state
+2026-10-11 21:57:35,295 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_init.reinit_clears_state':{'count': 1}
+2026-10-11 21:57:35,295 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,295 - twister - DEBUG - OUTPUT: START - test_reinit_clears_state
+2026-10-11 21:57:35,295 - twister - DEBUG - TC_START: Ztest case 'reinit_clears_state' matched to 'homework.unit.ring_buf.ring_buf_init.reinit_clears_state
+2026-10-11 21:57:35,295 - twister - DEBUG - OUTPUT:  PASS - test_reinit_clears_state in 0.000 seconds
+2026-10-11 21:57:35,295 - twister - DEBUG - TC_END: Ztest case 'reinit_clears_state' matched to 'homework.unit.ring_buf.ring_buf_init.reinit_clears_state
+2026-10-11 21:57:35,295 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_init.reinit_clears_state':{'count': 1}
+2026-10-11 21:57:35,295 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,295 - twister - DEBUG - OUTPUT: START - test_fresh_state
+2026-10-11 21:57:35,295 - twister - DEBUG - TC_START: Ztest case 'fresh_state' matched to 'homework.unit.ring_buf.ring_buf_init.fresh_state
+2026-10-11 21:57:35,295 - twister - DEBUG - OUTPUT:  PASS - test_fresh_state in 0.000 seconds
+2026-10-11 21:57:35,295 - twister - DEBUG - TC_END: Ztest case 'fresh_state' matched to 'homework.unit.ring_buf.ring_buf_init.fresh_state
+2026-10-11 21:57:35,295 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_init.fresh_state':{'count': 1}
+2026-10-11 21:57:35,295 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,295 - twister - DEBUG - OUTPUT: TESTSUITE ring_buf_init succeeded
+2026-10-11 21:57:35,295 - twister - DEBUG - TS_END: END suite 'ring_buf_init':{'count': 1, 'repeat': 1}
+2026-10-11 21:57:35,296 - twister - DEBUG - OUTPUT: Running TESTSUITE ring_buf_init
+2026-10-11 21:57:35,296 - twister - DEBUG - TS_START: START suite 'ring_buf_init'
+2026-10-11 21:57:35,296 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,296 - twister - DEBUG - OUTPUT: START - test_fresh_state
+2026-10-11 21:57:35,296 - twister - DEBUG - TC_START: Ztest case 'fresh_state' matched to 'homework.unit.ring_buf.ring_buf_init.fresh_state
+2026-10-11 21:57:35,296 - twister - DEBUG - OUTPUT:  PASS - test_fresh_state in 0.000 seconds
+2026-10-11 21:57:35,296 - twister - DEBUG - TC_END: Ztest case 'fresh_state' matched to 'homework.unit.ring_buf.ring_buf_init.fresh_state
+2026-10-11 21:57:35,296 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_init.fresh_state':{'count': 1}
+2026-10-11 21:57:35,296 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,296 - twister - DEBUG - OUTPUT: START - test_reinit_clears_state
+2026-10-11 21:57:35,296 - twister - DEBUG - TC_START: Ztest case 'reinit_clears_state' matched to 'homework.unit.ring_buf.ring_buf_init.reinit_clears_state
+2026-10-11 21:57:35,296 - twister - DEBUG - OUTPUT:  PASS - test_reinit_clears_state in 0.000 seconds
+2026-10-11 21:57:35,296 - twister - DEBUG - TC_END: Ztest case 'reinit_clears_state' matched to 'homework.unit.ring_buf.ring_buf_init.reinit_clears_state
+2026-10-11 21:57:35,296 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_init.reinit_clears_state':{'count': 1}
+2026-10-11 21:57:35,296 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,296 - twister - DEBUG - OUTPUT: START - test_fresh_state
+2026-10-11 21:57:35,296 - twister - DEBUG - TC_START: Ztest case 'fresh_state' matched to 'homework.unit.ring_buf.ring_buf_init.fresh_state
+2026-10-11 21:57:35,297 - twister - DEBUG - OUTPUT:  PASS - test_fresh_state in 0.000 seconds
+2026-10-11 21:57:35,297 - twister - DEBUG - TC_END: Ztest case 'fresh_state' matched to 'homework.unit.ring_buf.ring_buf_init.fresh_state
+2026-10-11 21:57:35,297 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_init.fresh_state':{'count': 1}
+2026-10-11 21:57:35,297 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,297 - twister - DEBUG - OUTPUT: START - test_reinit_clears_state
+2026-10-11 21:57:35,297 - twister - DEBUG - TC_START: Ztest case 'reinit_clears_state' matched to 'homework.unit.ring_buf.ring_buf_init.reinit_clears_state
+2026-10-11 21:57:35,297 - twister - DEBUG - OUTPUT:  PASS - test_reinit_clears_state in 0.000 seconds
+2026-10-11 21:57:35,297 - twister - DEBUG - TC_END: Ztest case 'reinit_clears_state' matched to 'homework.unit.ring_buf.ring_buf_init.reinit_clears_state
+2026-10-11 21:57:35,297 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_init.reinit_clears_state':{'count': 1}
+2026-10-11 21:57:35,297 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,297 - twister - DEBUG - OUTPUT: START - test_reinit_clears_state
+2026-10-11 21:57:35,297 - twister - DEBUG - TC_START: Ztest case 'reinit_clears_state' matched to 'homework.unit.ring_buf.ring_buf_init.reinit_clears_state
+2026-10-11 21:57:35,297 - twister - DEBUG - OUTPUT:  PASS - test_reinit_clears_state in 0.000 seconds
+2026-10-11 21:57:35,297 - twister - DEBUG - TC_END: Ztest case 'reinit_clears_state' matched to 'homework.unit.ring_buf.ring_buf_init.reinit_clears_state
+2026-10-11 21:57:35,297 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_init.reinit_clears_state':{'count': 1}
+2026-10-11 21:57:35,297 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,297 - twister - DEBUG - OUTPUT: START - test_fresh_state
+2026-10-11 21:57:35,297 - twister - DEBUG - TC_START: Ztest case 'fresh_state' matched to 'homework.unit.ring_buf.ring_buf_init.fresh_state
+2026-10-11 21:57:35,297 - twister - DEBUG - OUTPUT:  PASS - test_fresh_state in 0.000 seconds
+2026-10-11 21:57:35,297 - twister - DEBUG - TC_END: Ztest case 'fresh_state' matched to 'homework.unit.ring_buf.ring_buf_init.fresh_state
+2026-10-11 21:57:35,297 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_init.fresh_state':{'count': 1}
+2026-10-11 21:57:35,298 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,298 - twister - DEBUG - OUTPUT: TESTSUITE ring_buf_init succeeded
+2026-10-11 21:57:35,298 - twister - DEBUG - TS_END: END suite 'ring_buf_init':{'count': 1, 'repeat': 2}
+2026-10-11 21:57:35,298 - twister - DEBUG - OUTPUT: Running TESTSUITE ring_buf_push_pop
+2026-10-11 21:57:35,298 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,298 - twister - DEBUG - OUTPUT: START - test_push_full_returns_enospc
+2026-10-11 21:57:35,298 - twister - DEBUG - TC_START: Ztest case 'push_full_returns_enospc' matched to 'homework.unit.ring_buf.ring_buf_push_pop.push_full_returns_enospc
+2026-10-11 21:57:35,298 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> ring_buf: buffer full (capacity=4)[0m
+2026-10-11 21:57:35,298 - twister - DEBUG - OUTPUT:  PASS - test_push_full_returns_enospc in 0.000 seconds
+2026-10-11 21:57:35,298 - twister - DEBUG - TC_END: Ztest case 'push_full_returns_enospc' matched to 'homework.unit.ring_buf.ring_buf_push_pop.push_full_returns_enospc
+2026-10-11 21:57:35,298 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_push_pop.push_full_returns_enospc':{'count': 1}
+2026-10-11 21:57:35,298 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,298 - twister - DEBUG - OUTPUT: START - test_single_push_pop
+2026-10-11 21:57:35,298 - twister - DEBUG - TC_START: Ztest case 'single_push_pop' matched to 'homework.unit.ring_buf.ring_buf_push_pop.single_push_pop
+2026-10-11 21:57:35,298 - twister - DEBUG - OUTPUT:  PASS - test_single_push_pop in 0.000 seconds
+2026-10-11 21:57:35,298 - twister - DEBUG - TC_END: Ztest case 'single_push_pop' matched to 'homework.unit.ring_buf.ring_buf_push_pop.single_push_pop
+2026-10-11 21:57:35,298 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_push_pop.single_push_pop':{'count': 1}
+2026-10-11 21:57:35,298 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,299 - twister - DEBUG - OUTPUT: START - test_fifo_order
+2026-10-11 21:57:35,299 - twister - DEBUG - TC_START: Ztest case 'fifo_order' matched to 'homework.unit.ring_buf.ring_buf_push_pop.fifo_order
+2026-10-11 21:57:35,299 - twister - DEBUG - OUTPUT:  PASS - test_fifo_order in 0.000 seconds
+2026-10-11 21:57:35,299 - twister - DEBUG - TC_END: Ztest case 'fifo_order' matched to 'homework.unit.ring_buf.ring_buf_push_pop.fifo_order
+2026-10-11 21:57:35,299 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_push_pop.fifo_order':{'count': 1}
+2026-10-11 21:57:35,299 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,299 - twister - DEBUG - OUTPUT: START - test_push_full_returns_enospc
+2026-10-11 21:57:35,299 - twister - DEBUG - TC_START: Ztest case 'push_full_returns_enospc' matched to 'homework.unit.ring_buf.ring_buf_push_pop.push_full_returns_enospc
+2026-10-11 21:57:35,299 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> ring_buf: buffer full (capacity=4)[0m
+2026-10-11 21:57:35,299 - twister - DEBUG - OUTPUT:  PASS - test_push_full_returns_enospc in 0.000 seconds
+2026-10-11 21:57:35,299 - twister - DEBUG - TC_END: Ztest case 'push_full_returns_enospc' matched to 'homework.unit.ring_buf.ring_buf_push_pop.push_full_returns_enospc
+2026-10-11 21:57:35,299 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_push_pop.push_full_returns_enospc':{'count': 1}
+2026-10-11 21:57:35,299 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,299 - twister - DEBUG - OUTPUT: START - test_fifo_order
+2026-10-11 21:57:35,299 - twister - DEBUG - TC_START: Ztest case 'fifo_order' matched to 'homework.unit.ring_buf.ring_buf_push_pop.fifo_order
+2026-10-11 21:57:35,299 - twister - DEBUG - OUTPUT:  PASS - test_fifo_order in 0.000 seconds
+2026-10-11 21:57:35,299 - twister - DEBUG - TC_END: Ztest case 'fifo_order' matched to 'homework.unit.ring_buf.ring_buf_push_pop.fifo_order
+2026-10-11 21:57:35,299 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_push_pop.fifo_order':{'count': 1}
+2026-10-11 21:57:35,299 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,300 - twister - DEBUG - OUTPUT: START - test_single_push_pop
+2026-10-11 21:57:35,300 - twister - DEBUG - TC_START: Ztest case 'single_push_pop' matched to 'homework.unit.ring_buf.ring_buf_push_pop.single_push_pop
+2026-10-11 21:57:35,300 - twister - DEBUG - OUTPUT:  PASS - test_single_push_pop in 0.000 seconds
+2026-10-11 21:57:35,300 - twister - DEBUG - TC_END: Ztest case 'single_push_pop' matched to 'homework.unit.ring_buf.ring_buf_push_pop.single_push_pop
+2026-10-11 21:57:35,300 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_push_pop.single_push_pop':{'count': 1}
+2026-10-11 21:57:35,300 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,300 - twister - DEBUG - OUTPUT: START - test_single_push_pop
+2026-10-11 21:57:35,300 - twister - DEBUG - TC_START: Ztest case 'single_push_pop' matched to 'homework.unit.ring_buf.ring_buf_push_pop.single_push_pop
+2026-10-11 21:57:35,300 - twister - DEBUG - OUTPUT:  PASS - test_single_push_pop in 0.000 seconds
+2026-10-11 21:57:35,300 - twister - DEBUG - TC_END: Ztest case 'single_push_pop' matched to 'homework.unit.ring_buf.ring_buf_push_pop.single_push_pop
+2026-10-11 21:57:35,300 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_push_pop.single_push_pop':{'count': 1}
+2026-10-11 21:57:35,300 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,300 - twister - DEBUG - OUTPUT: START - test_push_full_returns_enospc
+2026-10-11 21:57:35,300 - twister - DEBUG - TC_START: Ztest case 'push_full_returns_enospc' matched to 'homework.unit.ring_buf.ring_buf_push_pop.push_full_returns_enospc
+2026-10-11 21:57:35,300 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> ring_buf: buffer full (capacity=4)[0m
+2026-10-11 21:57:35,300 - twister - DEBUG - OUTPUT:  PASS - test_push_full_returns_enospc in 0.000 seconds
+2026-10-11 21:57:35,300 - twister - DEBUG - TC_END: Ztest case 'push_full_returns_enospc' matched to 'homework.unit.ring_buf.ring_buf_push_pop.push_full_returns_enospc
+2026-10-11 21:57:35,300 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_push_pop.push_full_returns_enospc':{'count': 1}
+2026-10-11 21:57:35,300 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,300 - twister - DEBUG - OUTPUT: START - test_fifo_order
+2026-10-11 21:57:35,300 - twister - DEBUG - TC_START: Ztest case 'fifo_order' matched to 'homework.unit.ring_buf.ring_buf_push_pop.fifo_order
+2026-10-11 21:57:35,301 - twister - DEBUG - OUTPUT:  PASS - test_fifo_order in 0.000 seconds
+2026-10-11 21:57:35,301 - twister - DEBUG - TC_END: Ztest case 'fifo_order' matched to 'homework.unit.ring_buf.ring_buf_push_pop.fifo_order
+2026-10-11 21:57:35,301 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_push_pop.fifo_order':{'count': 1}
+2026-10-11 21:57:35,301 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,301 - twister - DEBUG - OUTPUT: TESTSUITE ring_buf_push_pop succeeded
+2026-10-11 21:57:35,301 - twister - DEBUG - TS_END: END suite 'ring_buf_push_pop':{'count': 1, 'repeat': 0}
+2026-10-11 21:57:35,301 - twister - DEBUG - OUTPUT: Running TESTSUITE ring_buf_push_pop
+2026-10-11 21:57:35,301 - twister - DEBUG - TS_START: START suite 'ring_buf_push_pop'
+2026-10-11 21:57:35,301 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,301 - twister - DEBUG - OUTPUT: START - test_push_full_returns_enospc
+2026-10-11 21:57:35,301 - twister - DEBUG - TC_START: Ztest case 'push_full_returns_enospc' matched to 'homework.unit.ring_buf.ring_buf_push_pop.push_full_returns_enospc
+2026-10-11 21:57:35,301 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> ring_buf: buffer full (capacity=4)[0m
+2026-10-11 21:57:35,301 - twister - DEBUG - OUTPUT:  PASS - test_push_full_returns_enospc in 0.000 seconds
+2026-10-11 21:57:35,301 - twister - DEBUG - TC_END: Ztest case 'push_full_returns_enospc' matched to 'homework.unit.ring_buf.ring_buf_push_pop.push_full_returns_enospc
+2026-10-11 21:57:35,301 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_push_pop.push_full_returns_enospc':{'count': 1}
+2026-10-11 21:57:35,301 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,301 - twister - DEBUG - OUTPUT: START - test_single_push_pop
+2026-10-11 21:57:35,301 - twister - DEBUG - TC_START: Ztest case 'single_push_pop' matched to 'homework.unit.ring_buf.ring_buf_push_pop.single_push_pop
+2026-10-11 21:57:35,301 - twister - DEBUG - OUTPUT:  PASS - test_single_push_pop in 0.000 seconds
+2026-10-11 21:57:35,302 - twister - DEBUG - TC_END: Ztest case 'single_push_pop' matched to 'homework.unit.ring_buf.ring_buf_push_pop.single_push_pop
+2026-10-11 21:57:35,302 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_push_pop.single_push_pop':{'count': 1}
+2026-10-11 21:57:35,302 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,302 - twister - DEBUG - OUTPUT: START - test_fifo_order
+2026-10-11 21:57:35,302 - twister - DEBUG - TC_START: Ztest case 'fifo_order' matched to 'homework.unit.ring_buf.ring_buf_push_pop.fifo_order
+2026-10-11 21:57:35,302 - twister - DEBUG - OUTPUT:  PASS - test_fifo_order in 0.000 seconds
+2026-10-11 21:57:35,302 - twister - DEBUG - TC_END: Ztest case 'fifo_order' matched to 'homework.unit.ring_buf.ring_buf_push_pop.fifo_order
+2026-10-11 21:57:35,302 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_push_pop.fifo_order':{'count': 1}
+2026-10-11 21:57:35,302 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,302 - twister - DEBUG - OUTPUT: START - test_fifo_order
+2026-10-11 21:57:35,302 - twister - DEBUG - TC_START: Ztest case 'fifo_order' matched to 'homework.unit.ring_buf.ring_buf_push_pop.fifo_order
+2026-10-11 21:57:35,302 - twister - DEBUG - OUTPUT:  PASS - test_fifo_order in 0.000 seconds
+2026-10-11 21:57:35,302 - twister - DEBUG - TC_END: Ztest case 'fifo_order' matched to 'homework.unit.ring_buf.ring_buf_push_pop.fifo_order
+2026-10-11 21:57:35,302 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_push_pop.fifo_order':{'count': 1}
+2026-10-11 21:57:35,302 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,302 - twister - DEBUG - OUTPUT: START - test_push_full_returns_enospc
+2026-10-11 21:57:35,302 - twister - DEBUG - TC_START: Ztest case 'push_full_returns_enospc' matched to 'homework.unit.ring_buf.ring_buf_push_pop.push_full_returns_enospc
+2026-10-11 21:57:35,302 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> ring_buf: buffer full (capacity=4)[0m
+2026-10-11 21:57:35,302 - twister - DEBUG - OUTPUT:  PASS - test_push_full_returns_enospc in 0.000 seconds
+2026-10-11 21:57:35,302 - twister - DEBUG - TC_END: Ztest case 'push_full_returns_enospc' matched to 'homework.unit.ring_buf.ring_buf_push_pop.push_full_returns_enospc
+2026-10-11 21:57:35,302 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_push_pop.push_full_returns_enospc':{'count': 1}
+2026-10-11 21:57:35,303 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,303 - twister - DEBUG - OUTPUT: START - test_single_push_pop
+2026-10-11 21:57:35,303 - twister - DEBUG - TC_START: Ztest case 'single_push_pop' matched to 'homework.unit.ring_buf.ring_buf_push_pop.single_push_pop
+2026-10-11 21:57:35,303 - twister - DEBUG - OUTPUT:  PASS - test_single_push_pop in 0.000 seconds
+2026-10-11 21:57:35,303 - twister - DEBUG - TC_END: Ztest case 'single_push_pop' matched to 'homework.unit.ring_buf.ring_buf_push_pop.single_push_pop
+2026-10-11 21:57:35,303 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_push_pop.single_push_pop':{'count': 1}
+2026-10-11 21:57:35,303 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,303 - twister - DEBUG - OUTPUT: START - test_fifo_order
+2026-10-11 21:57:35,303 - twister - DEBUG - TC_START: Ztest case 'fifo_order' matched to 'homework.unit.ring_buf.ring_buf_push_pop.fifo_order
+2026-10-11 21:57:35,303 - twister - DEBUG - OUTPUT:  PASS - test_fifo_order in 0.000 seconds
+2026-10-11 21:57:35,303 - twister - DEBUG - TC_END: Ztest case 'fifo_order' matched to 'homework.unit.ring_buf.ring_buf_push_pop.fifo_order
+2026-10-11 21:57:35,303 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_push_pop.fifo_order':{'count': 1}
+2026-10-11 21:57:35,303 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,303 - twister - DEBUG - OUTPUT: START - test_push_full_returns_enospc
+2026-10-11 21:57:35,303 - twister - DEBUG - TC_START: Ztest case 'push_full_returns_enospc' matched to 'homework.unit.ring_buf.ring_buf_push_pop.push_full_returns_enospc
+2026-10-11 21:57:35,303 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> ring_buf: buffer full (capacity=4)[0m
+2026-10-11 21:57:35,303 - twister - DEBUG - OUTPUT:  PASS - test_push_full_returns_enospc in 0.000 seconds
+2026-10-11 21:57:35,303 - twister - DEBUG - TC_END: Ztest case 'push_full_returns_enospc' matched to 'homework.unit.ring_buf.ring_buf_push_pop.push_full_returns_enospc
+2026-10-11 21:57:35,303 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_push_pop.push_full_returns_enospc':{'count': 1}
+2026-10-11 21:57:35,303 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,304 - twister - DEBUG - OUTPUT: START - test_single_push_pop
+2026-10-11 21:57:35,304 - twister - DEBUG - TC_START: Ztest case 'single_push_pop' matched to 'homework.unit.ring_buf.ring_buf_push_pop.single_push_pop
+2026-10-11 21:57:35,304 - twister - DEBUG - OUTPUT:  PASS - test_single_push_pop in 0.000 seconds
+2026-10-11 21:57:35,304 - twister - DEBUG - TC_END: Ztest case 'single_push_pop' matched to 'homework.unit.ring_buf.ring_buf_push_pop.single_push_pop
+2026-10-11 21:57:35,304 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_push_pop.single_push_pop':{'count': 1}
+2026-10-11 21:57:35,304 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,304 - twister - DEBUG - OUTPUT: TESTSUITE ring_buf_push_pop succeeded
+2026-10-11 21:57:35,304 - twister - DEBUG - TS_END: END suite 'ring_buf_push_pop':{'count': 1, 'repeat': 1}
+2026-10-11 21:57:35,304 - twister - DEBUG - OUTPUT: Running TESTSUITE ring_buf_push_pop
+2026-10-11 21:57:35,304 - twister - DEBUG - TS_START: START suite 'ring_buf_push_pop'
+2026-10-11 21:57:35,304 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,304 - twister - DEBUG - OUTPUT: START - test_single_push_pop
+2026-10-11 21:57:35,304 - twister - DEBUG - TC_START: Ztest case 'single_push_pop' matched to 'homework.unit.ring_buf.ring_buf_push_pop.single_push_pop
+2026-10-11 21:57:35,304 - twister - DEBUG - OUTPUT:  PASS - test_single_push_pop in 0.000 seconds
+2026-10-11 21:57:35,304 - twister - DEBUG - TC_END: Ztest case 'single_push_pop' matched to 'homework.unit.ring_buf.ring_buf_push_pop.single_push_pop
+2026-10-11 21:57:35,304 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_push_pop.single_push_pop':{'count': 1}
+2026-10-11 21:57:35,304 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,304 - twister - DEBUG - OUTPUT: START - test_fifo_order
+2026-10-11 21:57:35,304 - twister - DEBUG - TC_START: Ztest case 'fifo_order' matched to 'homework.unit.ring_buf.ring_buf_push_pop.fifo_order
+2026-10-11 21:57:35,304 - twister - DEBUG - OUTPUT:  PASS - test_fifo_order in 0.000 seconds
+2026-10-11 21:57:35,304 - twister - DEBUG - TC_END: Ztest case 'fifo_order' matched to 'homework.unit.ring_buf.ring_buf_push_pop.fifo_order
+2026-10-11 21:57:35,304 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_push_pop.fifo_order':{'count': 1}
+2026-10-11 21:57:35,305 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,305 - twister - DEBUG - OUTPUT: START - test_push_full_returns_enospc
+2026-10-11 21:57:35,305 - twister - DEBUG - TC_START: Ztest case 'push_full_returns_enospc' matched to 'homework.unit.ring_buf.ring_buf_push_pop.push_full_returns_enospc
+2026-10-11 21:57:35,305 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> ring_buf: buffer full (capacity=4)[0m
+2026-10-11 21:57:35,305 - twister - DEBUG - OUTPUT:  PASS - test_push_full_returns_enospc in 0.000 seconds
+2026-10-11 21:57:35,305 - twister - DEBUG - TC_END: Ztest case 'push_full_returns_enospc' matched to 'homework.unit.ring_buf.ring_buf_push_pop.push_full_returns_enospc
+2026-10-11 21:57:35,305 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_push_pop.push_full_returns_enospc':{'count': 1}
+2026-10-11 21:57:35,305 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,305 - twister - DEBUG - OUTPUT: START - test_single_push_pop
+2026-10-11 21:57:35,305 - twister - DEBUG - TC_START: Ztest case 'single_push_pop' matched to 'homework.unit.ring_buf.ring_buf_push_pop.single_push_pop
+2026-10-11 21:57:35,305 - twister - DEBUG - OUTPUT:  PASS - test_single_push_pop in 0.000 seconds
+2026-10-11 21:57:35,305 - twister - DEBUG - TC_END: Ztest case 'single_push_pop' matched to 'homework.unit.ring_buf.ring_buf_push_pop.single_push_pop
+2026-10-11 21:57:35,305 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_push_pop.single_push_pop':{'count': 1}
+2026-10-11 21:57:35,305 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,305 - twister - DEBUG - OUTPUT: START - test_push_full_returns_enospc
+2026-10-11 21:57:35,305 - twister - DEBUG - TC_START: Ztest case 'push_full_returns_enospc' matched to 'homework.unit.ring_buf.ring_buf_push_pop.push_full_returns_enospc
+2026-10-11 21:57:35,305 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> ring_buf: buffer full (capacity=4)[0m
+2026-10-11 21:57:35,305 - twister - DEBUG - OUTPUT:  PASS - test_push_full_returns_enospc in 0.000 seconds
+2026-10-11 21:57:35,305 - twister - DEBUG - TC_END: Ztest case 'push_full_returns_enospc' matched to 'homework.unit.ring_buf.ring_buf_push_pop.push_full_returns_enospc
+2026-10-11 21:57:35,305 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_push_pop.push_full_returns_enospc':{'count': 1}
+2026-10-11 21:57:35,306 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,306 - twister - DEBUG - OUTPUT: START - test_fifo_order
+2026-10-11 21:57:35,306 - twister - DEBUG - TC_START: Ztest case 'fifo_order' matched to 'homework.unit.ring_buf.ring_buf_push_pop.fifo_order
+2026-10-11 21:57:35,306 - twister - DEBUG - OUTPUT:  PASS - test_fifo_order in 0.000 seconds
+2026-10-11 21:57:35,306 - twister - DEBUG - TC_END: Ztest case 'fifo_order' matched to 'homework.unit.ring_buf.ring_buf_push_pop.fifo_order
+2026-10-11 21:57:35,306 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_push_pop.fifo_order':{'count': 1}
+2026-10-11 21:57:35,306 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,306 - twister - DEBUG - OUTPUT: START - test_single_push_pop
+2026-10-11 21:57:35,306 - twister - DEBUG - TC_START: Ztest case 'single_push_pop' matched to 'homework.unit.ring_buf.ring_buf_push_pop.single_push_pop
+2026-10-11 21:57:35,306 - twister - DEBUG - OUTPUT:  PASS - test_single_push_pop in 0.000 seconds
+2026-10-11 21:57:35,306 - twister - DEBUG - TC_END: Ztest case 'single_push_pop' matched to 'homework.unit.ring_buf.ring_buf_push_pop.single_push_pop
+2026-10-11 21:57:35,306 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_push_pop.single_push_pop':{'count': 1}
+2026-10-11 21:57:35,306 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,306 - twister - DEBUG - OUTPUT: START - test_push_full_returns_enospc
+2026-10-11 21:57:35,306 - twister - DEBUG - TC_START: Ztest case 'push_full_returns_enospc' matched to 'homework.unit.ring_buf.ring_buf_push_pop.push_full_returns_enospc
+2026-10-11 21:57:35,306 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> ring_buf: buffer full (capacity=4)[0m
+2026-10-11 21:57:35,306 - twister - DEBUG - OUTPUT:  PASS - test_push_full_returns_enospc in 0.000 seconds
+2026-10-11 21:57:35,306 - twister - DEBUG - TC_END: Ztest case 'push_full_returns_enospc' matched to 'homework.unit.ring_buf.ring_buf_push_pop.push_full_returns_enospc
+2026-10-11 21:57:35,307 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_push_pop.push_full_returns_enospc':{'count': 1}
+2026-10-11 21:57:35,307 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,307 - twister - DEBUG - OUTPUT: START - test_fifo_order
+2026-10-11 21:57:35,307 - twister - DEBUG - TC_START: Ztest case 'fifo_order' matched to 'homework.unit.ring_buf.ring_buf_push_pop.fifo_order
+2026-10-11 21:57:35,307 - twister - DEBUG - OUTPUT:  PASS - test_fifo_order in 0.000 seconds
+2026-10-11 21:57:35,307 - twister - DEBUG - TC_END: Ztest case 'fifo_order' matched to 'homework.unit.ring_buf.ring_buf_push_pop.fifo_order
+2026-10-11 21:57:35,307 - twister - DEBUG - TC_END: END case 'homework.unit.ring_buf.ring_buf_push_pop.fifo_order':{'count': 1}
+2026-10-11 21:57:35,307 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,307 - twister - DEBUG - OUTPUT: TESTSUITE ring_buf_push_pop succeeded
+2026-10-11 21:57:35,307 - twister - DEBUG - TS_END: END suite 'ring_buf_push_pop':{'count': 1, 'repeat': 2}
+2026-10-11 21:57:35,307 - twister - DEBUG - OUTPUT: 
+2026-10-11 21:57:35,307 - twister - DEBUG - OUTPUT: ------ TESTSUITE SUMMARY START ------
+2026-10-11 21:57:35,307 - twister - DEBUG - OUTPUT: 
+2026-10-11 21:57:35,307 - twister - DEBUG - OUTPUT: SUITE PASS - 100.00% [ring_buf_boundaries]: pass = 3, fail = 0, skip = 0, total = 3 duration = 0.000 seconds
+2026-10-11 21:57:35,307 - twister - DEBUG - OUTPUT:  - PASS - [ring_buf_boundaries.test_is_full_after_fill] duration = 0.000 seconds
+2026-10-11 21:57:35,307 - twister - DEBUG - TS_SUM: Ztest case 'is_full_after_fill' matched to 'homework.unit.ring_buf.ring_buf_boundaries.is_full_after_fill
+2026-10-11 21:57:35,308 - twister - DEBUG - OUTPUT:  - PASS - [ring_buf_boundaries.test_peek_does_not_consume] duration = 0.000 seconds
+2026-10-11 21:57:35,308 - twister - DEBUG - TS_SUM: Ztest case 'peek_does_not_consume' matched to 'homework.unit.ring_buf.ring_buf_boundaries.peek_does_not_consume
+2026-10-11 21:57:35,308 - twister - DEBUG - OUTPUT:  - PASS - [ring_buf_boundaries.test_pop_null_returns_einval] duration = 0.000 seconds
+2026-10-11 21:57:35,308 - twister - DEBUG - TS_SUM: Ztest case 'pop_null_returns_einval' matched to 'homework.unit.ring_buf.ring_buf_boundaries.pop_null_returns_einval
+2026-10-11 21:57:35,308 - twister - DEBUG - OUTPUT: 
+2026-10-11 21:57:35,308 - twister - DEBUG - OUTPUT: SUITE PASS - 100.00% [ring_buf_init]: pass = 2, fail = 0, skip = 0, total = 2 duration = 0.000 seconds
+2026-10-11 21:57:35,308 - twister - DEBUG - OUTPUT:  - PASS - [ring_buf_init.test_fresh_state] duration = 0.000 seconds
+2026-10-11 21:57:35,308 - twister - DEBUG - TS_SUM: Ztest case 'fresh_state' matched to 'homework.unit.ring_buf.ring_buf_init.fresh_state
+2026-10-11 21:57:35,308 - twister - DEBUG - OUTPUT:  - PASS - [ring_buf_init.test_reinit_clears_state] duration = 0.000 seconds
+2026-10-11 21:57:35,308 - twister - DEBUG - TS_SUM: Ztest case 'reinit_clears_state' matched to 'homework.unit.ring_buf.ring_buf_init.reinit_clears_state
+2026-10-11 21:57:35,308 - twister - DEBUG - OUTPUT: 
+2026-10-11 21:57:35,308 - twister - DEBUG - OUTPUT: SUITE PASS - 100.00% [ring_buf_push_pop]: pass = 3, fail = 0, skip = 0, total = 3 duration = 0.000 seconds
+2026-10-11 21:57:35,308 - twister - DEBUG - OUTPUT:  - PASS - [ring_buf_push_pop.test_fifo_order] duration = 0.000 seconds
+2026-10-11 21:57:35,308 - twister - DEBUG - TS_SUM: Ztest case 'fifo_order' matched to 'homework.unit.ring_buf.ring_buf_push_pop.fifo_order
+2026-10-11 21:57:35,308 - twister - DEBUG - OUTPUT:  - PASS - [ring_buf_push_pop.test_push_full_returns_enospc] duration = 0.000 seconds
+2026-10-11 21:57:35,308 - twister - DEBUG - TS_SUM: Ztest case 'push_full_returns_enospc' matched to 'homework.unit.ring_buf.ring_buf_push_pop.push_full_returns_enospc
+2026-10-11 21:57:35,309 - twister - DEBUG - OUTPUT:  - PASS - [ring_buf_push_pop.test_single_push_pop] duration = 0.000 seconds
+2026-10-11 21:57:35,309 - twister - DEBUG - TS_SUM: Ztest case 'single_push_pop' matched to 'homework.unit.ring_buf.ring_buf_push_pop.single_push_pop
+2026-10-11 21:57:35,309 - twister - DEBUG - OUTPUT: 
+2026-10-11 21:57:35,309 - twister - DEBUG - OUTPUT: ------ TESTSUITE SUMMARY END ------
+2026-10-11 21:57:35,309 - twister - DEBUG - OUTPUT: 
+2026-10-11 21:57:35,309 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-11 21:57:35,309 - twister - DEBUG - OUTPUT: RunID: 961feb87cf0620f90f15e12272c13d87
+2026-10-11 21:57:35,309 - twister - DEBUG - OUTPUT: PROJECT EXECUTION SUCCESSFUL
+2026-10-11 21:57:35,310 - twister - DEBUG - Expected suite names:['ring_buf_init', 'ring_buf_push_pop', 'ring_buf_boundaries']
+2026-10-11 21:57:35,310 - twister - DEBUG - Detected suite names:['ring_buf_boundaries', 'ring_buf_init', 'ring_buf_push_pop']
+2026-10-11 21:57:35,311 - twister - DEBUG - run status: native_sim/native/host/homework.unit.ring_buf passed
+2026-10-11 21:57:35,314 - twister - INFO - 1/1 native_sim/native         homework.unit.ring_buf                             [32mPASSED[39m (native 0.031s <host>)
+2026-10-11 21:57:35,314 - twister - INFO -                                    homework.unit.ring_buf.ring_buf_boundaries.is_full_after_fill               [32mPASSED      [39m
+2026-10-11 21:57:35,314 - twister - INFO -                                    homework.unit.ring_buf.ring_buf_boundaries.pop_null_returns_einval          [32mPASSED      [39m
+2026-10-11 21:57:35,314 - twister - INFO -                                    homework.unit.ring_buf.ring_buf_boundaries.peek_does_not_consume            [32mPASSED      [39m
+2026-10-11 21:57:35,314 - twister - INFO -                                    homework.unit.ring_buf.ring_buf_push_pop.push_full_returns_enospc           [32mPASSED      [39m
+2026-10-11 21:57:35,314 - twister - INFO -                                    homework.unit.ring_buf.ring_buf_push_pop.fifo_order                         [32mPASSED      [39m
+2026-10-11 21:57:35,314 - twister - INFO -                                    homework.unit.ring_buf.ring_buf_push_pop.single_push_pop                    [32mPASSED      [39m
+2026-10-11 21:57:35,314 - twister - INFO -                                    homework.unit.ring_buf.ring_buf_init.reinit_clears_state                    [32mPASSED      [39m
+2026-10-11 21:57:35,314 - twister - INFO -                                    homework.unit.ring_buf.ring_buf_init.fresh_state                            [32mPASSED      [39m
+2026-10-11 21:57:35,321 - twister - INFO - 1 test scenarios (1 configurations) selected, 0 configurations filtered (0 by static filter, 0 at runtime).
+2026-10-11 21:57:35,322 - twister - INFO - [32m1 of 1[39m executed test configurations passed (100.00%), 0 built (not run), 0 failed, 0 errored, with no warnings in 6.27 seconds.
+2026-10-11 21:57:35,322 - twister - INFO - 8 of 8 executed test cases passed (100.00%) on 1 out of total 1115 platforms (0.09%).
+2026-10-11 21:57:35,322 - twister - INFO - [32m1[39m test configurations executed on platforms, [36m0[39m test configurations were only built.
+2026-10-11 21:57:35,323 - twister - INFO - Saving reports...
+2026-10-11 21:57:35,323 - twister - INFO - Writing JSON report /home/marcos/workspace/zephyr-course/twister-out/twister.json
+2026-10-11 21:57:35,323 - twister - INFO - Writing xunit report /home/marcos/workspace/zephyr-course/twister-out/twister.xml...
+2026-10-11 21:57:35,324 - twister - INFO - Writing xunit report /home/marcos/workspace/zephyr-course/twister-out/twister_report.xml...
+2026-10-11 21:57:35,325 - twister - INFO - Run completed

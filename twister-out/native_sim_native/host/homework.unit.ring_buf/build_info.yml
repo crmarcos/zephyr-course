@@ -1,0 +1,46 @@
+cmake:
+  application:
+    configuration-dir: '/home/marcos/workspace/zephyr-course/tests/ring_buf'
+    source-dir: '/home/marcos/workspace/zephyr-course/tests/ring_buf'
+  board:
+    name: 'native_sim'
+    path:
+     - '/home/marcos/workspace/deps/zephyr/boards/native/native_sim'
+    qualifiers: 'native'
+    revision: ''
+  devicetree:
+    bindings-dirs:
+     - '/home/marcos/workspace/deps/zephyr/dts/bindings'
+    files:
+     - '/home/marcos/workspace/deps/zephyr/boards/native/native_sim/native_sim.dts'
+    include-dirs:
+     - '/home/marcos/workspace/deps/modules/hal/nxp/dts'
+     - '/home/marcos/workspace/deps/modules/hal/stm32/dts'
+     - '/home/marcos/workspace/deps/zephyr/include'
+     - '/home/marcos/workspace/deps/zephyr/include/zephyr'
+     - '/home/marcos/workspace/deps/zephyr/dts/common'
+     - '/home/marcos/workspace/deps/zephyr/dts/vendor'
+     - '/home/marcos/workspace/deps/zephyr/dts/rx'
+     - '/home/marcos/workspace/deps/zephyr/dts/x86'
+     - '/home/marcos/workspace/deps/zephyr/dts/xtensa'
+     - '/home/marcos/workspace/deps/zephyr/dts/sparc'
+     - '/home/marcos/workspace/deps/zephyr/dts/riscv'
+     - '/home/marcos/workspace/deps/zephyr/dts/posix'
+     - '/home/marcos/workspace/deps/zephyr/dts/arm64'
+     - '/home/marcos/workspace/deps/zephyr/dts/arm'
+     - '/home/marcos/workspace/deps/zephyr/dts/arc'
+     - '/home/marcos/workspace/deps/zephyr/dts'
+  kconfig:
+    files:
+     - '/home/marcos/workspace/deps/zephyr/boards/native/native_sim/native_sim_defconfig'
+     - '/home/marcos/workspace/zephyr-course/tests/ring_buf/prj.conf'
+     - '/home/marcos/workspace/zephyr-course/twister-out/native_sim_native/host/homework.unit.ring_buf/zephyr/misc/generated/extra_kconfig_options.conf'
+    user-files:
+     - '/home/marcos/workspace/zephyr-course/tests/ring_buf/prj.conf'
+  toolchain:
+    name: 'host'
+    path: ''
+  zephyr:
+    version: '4.2.0'
+    zephyr-base: '/home/marcos/workspace/deps/zephyr'
+version: '0.1.0'
